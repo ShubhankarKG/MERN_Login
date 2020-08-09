@@ -1,0 +1,44 @@
+{
+  "name": "MERN_Login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client-install": "npm install --prefix views",
+    "client": "npm start --prefix views",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubhankarKG/MERN_Login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShubhankarKG/MERN_Login/issues"
+  },
+  "homepage": "https://github.com/ShubhankarKG/MERN_Login#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
